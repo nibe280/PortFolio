@@ -81,7 +81,6 @@ export default function Hero({ onScrollToProjects }: HeroProps) {
               borderLeft: "3px solid #f5a020",
               background: "transparent",
               border: "none",
-              borderLeft: "3px solid #f5a020",
               cursor: "pointer",
             }}
           >
