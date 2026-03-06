@@ -1,4 +1,5 @@
 import type { EcoMetric, Project, TimelineItem, SkillCategory, NavItem } from "@/types";
+export type { EcoMetric, Project, TimelineItem, SkillCategory, NavItem } from "@/types";
 
 // ─── Navigation ────────────────────────────────────────────────────────────────
 export const NAV_ITEMS: NavItem[] = [
