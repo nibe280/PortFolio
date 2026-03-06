@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Scrollbar ──────────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 5px; background: #0d0d0d; }
+::-webkit-scrollbar-thumb  { background: #222; border-radius: 3px; }
+
+/* ── Reset ──────────────────────────────────────────────────────────── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: #0d0d0d; color: #ddd; }
+
+/* ── Keyframes ──────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50%       { opacity: 1; }
+}
+
+@keyframes blobMove {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(30px, -20px) scale(1.08); }
+}
+
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ── Utility classes ────────────────────────────────────────────────── */
+.animate-fadeUp { animation: fadeUp 0.7s ease both; }
+.animate-fadeIn { animation: fadeIn 0.5s ease both; }
